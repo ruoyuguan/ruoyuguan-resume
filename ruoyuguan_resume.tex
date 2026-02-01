@@ -1,0 +1,129 @@
+%-------------------------------------
+% Resum in LaTeX (XeLaTeX)
+% Author:  HF Yuan
+% Project: https://github.com/xyz-yuanhf/yuan-resume
+% Base on: https://github.com/mattyHerzig/mattys_resume
+%          http://www.jianxu.net/en/
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{myresume}  % Style package
+
+%
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+\newcommand{\code}[1]{{\Courier \fontsize{11pt}{11pt}\selectfont #1}}
+%
+
+% --------------------  START  --------------------
+\begin{document}
+%
+\pagestyle{empty}
+%
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \setstretch{0.6}
+  \item {\Calluna (+86) 18604511940} 
+  \item {\Calluna \href{mailto:ruoyuguan.physics@gmail.com}{ruoyuguan.physics@gmail.com}}  
+  \item {\Calluna \href{https://ruoyuguan.github.io/}{ruoyuguan.github.io}}  
+\end{flushright}\vspace{-45pt}
+
+\begin{flushleft}
+  {\Calluna \fontsize{30pt}{30pt}\selectfont \textsc{Ruo-Yu Guan}} %\quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont \textsc{Ph.D.}}
+  \noindent\rule{\textwidth}{0.4pt}
+\end{flushleft}
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+\section{Education}
+}{
+\eduHeading
+  {School of Physics, Huazhong University of Science and Technology}{Wuhan, China}
+  {Ph.D. in Physics (Theoretical Physics)}{Sep.\ 2025 -- Jun.\ 2029 \footnotesize{\textit{(expected)}}}
+\itemListStart
+\myItem{Supervisor: Prof.\ Yan Wang}
+\myItem{Research focus: gravitational-wave astrophysics}
+\myItem{Affiliation: National Gravitation Laboratory (NGL), Huazhong University of Science and Technology (HUST)}
+\itemListEnd
+
+\eduHeading
+  {Department of Physics, The University of Hong Kong (HKU)}{Hong Kong SAR, China}
+  {M.Sc. in Physics}{Sep.\ 2023 -- Jul.\ 2024 (degree conferred Nov.\ 2024)}
+\itemListStart
+  \myItem{Supervisor: Prof.\ Stephen Chi Yung Ng}
+  \myItem{Capstone Project: \textit{Identifying Sources in Cygnus OB2 Using Multiwavelength Observations}}
+\itemListEnd
+
+\eduHeading
+  {Department of Materials Science, Jilin University}{Changchun, China}
+  {B.Sc. in Materials Physics}{Sep.\ 2018 -- Jun.\ 2022}
+\itemListStart
+  \myItem{Graduation Thesis: \textit{Study on the Prompt Emission of Gamma-ray Bursts and its Polarization}}
+  \myItem{Research Mentor: Prof.\ Mi-Xiang Lan (Center for Theoretical Physics and College of Physics, Jilin University)}
+\itemListEnd
+
+}
+
+% -------------------- Work Experience --------------------
+\sectionBlock{
+\section{Experience}
+}{
+\eduHeading
+  {Department of Astronomy, HUST}{Wuhan, China}
+  {Research Assistant (contract)}{Nov.\ 2024 -- Jun.\ 2025}
+\itemListStart
+  \myItem{Supervisor: Prof.\ Yuan-Chuan Zou}
+  \myItem{Gamma-ray bursts: light-curve time-series analysis and correlation studies in \code{Python}; led to a first-author peer-reviewed publication (see Publications)}
+\itemListEnd
+
+}
+
+% -------------------- PUBLICATIONS --------------------
+\sectionBlock{
+\section{Publications}
+}{
+\pubListStart
+\justifying
+\item \textbf{Ruo-Yu Guan} and Mi-Xiang Lan. Interpreting time-integrated polarization data of gamma-ray burst prompt emission. \textit{Astronomy \& Astrophysics}, \textbf{670}, A160 (2023). \href{https://doi.org/10.1051/0004-6361/202243805}{doi:\allowbreak 10.1051/0004-6361/202243805}.
+\item \textbf{Ruo-Yu Guan}, Fei-Fei Wang, and Yuan-Chuan Zou. Hurst index of gamma-ray burst light curves and its statistical study. \textit{Journal of High Energy Astrophysics}, \textbf{51}, 100559 (2026). \href{https://doi.org/10.1016/j.jheap.2026.100559}{doi:\allowbreak 10.1016/j.jheap.2026.100559}.
+\pubListEnd
+}
+
+% -------------------- PROJECTS --------------------
+\sectionBlock{
+\section{Research Projects}
+}{
+
+\projHeading
+{\textbf{Galactic Structure Inference with Double White Dwarfs as Multi-Messenger Probes}}
+{Ph.D. research, HUST (NGL) (Supervisor: Prof.\ Yan Wang)} {Jul.\ 2025 -- Present}
+
+\projHeading
+{\textbf{Time-Series and Correlation Analysis of Gamma-Ray Burst Light Curves}}
+{Research project, HUST (Supervisor: Prof.\ Yuan-Chuan Zou); supported by National SKA Program of China (Grant No.\ 2022SKA0130100)} {Oct.\ 2024 -- Jan.\ 2026}
+
+\projHeading
+{\textbf{Gamma-Ray Burst Prompt Emission and Polarization}}
+{B.Sc. research, Jilin University (Mentor: Prof.\ Mi-Xiang Lan); supported by National Natural Science Foundation of China (Grants No.\ 11903014 and 12147217)} {2022 -- Feb.\ 2023}
+
+}
+
+% -------------------- SKILLS --------------------
+
+\sectionBlock{
+\section{Skills}
+}{
+\skillListStart
+\justifying
+\item \emph{Languages}: Chinese (Mandarin: native; Cantonese: conversational); English (IELTS 6.5, 2023; completed an English-taught M.Sc. at HKU).
+\item \emph{Programming}: \textbf{\code{Python}} (primary); \code{MATLAB}, \code{Mathematica}, \code{R}, \code{IDL}, \code{C++} (familiar).
+\item \emph{Tools \& systems}: \code{NumPy}, \code{SciPy}, \code{Pandas}, \code{Matplotlib}; \code{Jupyter}; \LaTeX; \code{Git}; Windows; macOS; Linux (Ubuntu); HPC (remote Linux servers; batch jobs).
+\skillListEnd
+}
+
+\end{document}
+
+%\eduHeading
+%  {Laboratory for Space Research, The University of Hong Kong}{Hong Kong, China}
+%  {Member}{Oct. 2023 - Nov. 2024}
